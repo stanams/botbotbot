@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
-  root to: 'static_pages#root'
-  
+  root to: 'categories#index'
+
+  resources :resources, only: [:new, :create]
+  resources :categories, only: [:index]
+
 end

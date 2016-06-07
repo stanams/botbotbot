@@ -1,4 +1,4 @@
-class Api::ResourcesController < ApplicationController
+class ResourcesController < ApplicationController
 
   def new
     @resource = Resource.new
@@ -8,12 +8,8 @@ class Api::ResourcesController < ApplicationController
     if @resource.save
       render :index
     else
-      render json: @resource.errors.full_messages
+      redirect_to resources_path
     end
-  end
-
-  def index
-    @resources = Resource.all
   end
 
   private

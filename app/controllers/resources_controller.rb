@@ -2,6 +2,7 @@ class ResourcesController < ApplicationController
 
   def new
     @resource = Resource.new
+    @categories = Category.all
   end
 
   def create

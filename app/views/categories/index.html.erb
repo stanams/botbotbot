@@ -1,13 +1,13 @@
 <div class="container">
   <div class="row">
     <% @categories.each do |cat| %>
-
+    
       <div class="col s12 m6 l3">
         <div class="card">
           <ul class="collection with-header">
             <li class="collection-header"><%= cat.cat_name %></li>
             <% cat.resources.each do |res| %>
-              <li class="collection-item"><a href="<%= res.link %>"><%= res.ress_name %></a></li>
+              <li class="collection-item"><a href="<%= res.link %>" target="_blank"><%= res.ress_name %></a></li>
             <% end %>
           </ul>
 

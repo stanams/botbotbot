@@ -1,44 +1,49 @@
-
 <div class="container">
 
   <h3>Add a new bot ressource</h3>
 
-  <div class="row">
-    <%= form_for @resource, class: "col s12 m6", url: {action: "create"} do |f| %>
+  <form action="/resources" method="post">
 
-      <!-- Resource name -->
-      <div class="row">
-        <div class="input-field col s12 m6">
-          <br>
-          <%= f.text_field :ress_name, id: "ress_name", class: "validate", placeholder: "Resource Name" %>
-        </div>
+    <input
+    type="hidden"
+    name="authenticity_token"
+    value="<%= form_authenticity_token %>">
+
+    <div class="row">
+      <div class="input-field col s12 m6">
+
+        <label for="ressource_name">Ressource Name</label>
+        <input type="text" id="ressource_name" name="resource[ress_name]" value="<%= @resource.ress_name %>">
+
       </div>
+    </div>
 
-      <!-- Resource link -->
-      <div class="row">
-        <div class="input-field col s12 m6">
-          <br>
-          <%= f.text_field :link, id: "link", class: "validate", placeholder: "Resource Link" %>
-        </div>
+    <div class="row">
+      <div class="input-field col s12 m6">
+        <label for="ressource_link">Ressource Link</label>
+        <input type="text" id="ressource_link" name="resource[link]" value="<%= @resource.link %>">
       </div>
+    </div>
 
-       <!-- TODO: finish FORM! -->
-      <!-- Resource category -->
-      <div class="row">
-        <div class="input-field col s12 m6">
-
-          <%= f.select(:category_id) do %>
-            <% categories_array = Category.all.map { |cat| [cat.cat_name, cat.id] } %>
-            <%= options_for_select(categories_array) %>
-          <% end %>
-          <label for="resource_link">Categories</label>
-        </div>
+    <div class="row">
+      <div class="input-field col s12 m6">
+        <label for="categories">Categories</label>
+        <br>
+        <br>
+        <select id="categories" name="resource[category_id]">
+          <option value="1">AI/NLP Engine</option>
+          <option value="2">How to...</option>
+          <option value="3">News</option>
+          <option value="4">Communities</option>
+          <option value="5">Bots Lists</option>
+          <option value="6">APIs</option>
+          <option value="7">Messenging Platforms</option>
+          <option value="8">Librairies</option>
+        </select>
       </div>
-  <br><br>
-      <div class="actions">
-        <%= f.submit "Post", class: "btn btn-primary" %>
-      </div>
+    </div>
 
-    <% end %>
-  </div>
+    <br>
+    <input type="submit" value="Post">
+  </form>
 </div>

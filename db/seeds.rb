@@ -51,9 +51,10 @@ Resource.create(link: 'https://meya.ai/' , ress_name: "Meya.ai", category_id: 3)
 Resource.create(link: 'http://rebot.me' , ress_name: "Rebot.me", category_id: 3)
 
 # 4. Communities
-Resource.create(link: 'https://www.facebook.com/groups/chatbot/' , ress_name: "Bots (FB)", category_id: 4)
-Resource.create(link: 'https://www.facebook.com/groups/198671197186799/' , ress_name: "Paris Bots (FB)", category_id: 4)
-Resource.create(link: 'https://www.facebook.com/groups/uxforbots/' , ress_name: "UX for Bots (FB)", category_id: 4)
+Resource.create(link: 'https://www.facebook.com/groups/chatbot/' , ress_name: "Bots", category_id: 4)
+Resource.create(link: 'https://www.facebook.com/groups/198671197186799/' , ress_name: "Paris Bots", category_id: 4)
+Resource.create(link: 'http://www.meetup.com/Chatbots-Paris/' , ress_name: "Chatbot Paris", category_id: 4)
+Resource.create(link: 'https://www.facebook.com/groups/uxforbots/' , ress_name: "UX for Bots", category_id: 4)
 
 # 5. Bot Lists
 Resource.create(link: 'https://botlist.co' , ress_name: "Botlist", category_id: 5)

@@ -16,6 +16,7 @@ Category.create(cat_name: "Librairies") #7
 Category.create(cat_name: "News") #8
 Category.create(cat_name: "Deploy & Host") #9
 Category.create(cat_name: "Hiring Bot Dev") #10
+Category.create(cat_name: "Tools") #11
 
 # 1. AI/NLP Engines
 Resource.create(link: 'https://api.ai/' , ress_name: "api.ai", category_id: 1)
@@ -60,6 +61,7 @@ Resource.create(link: 'https://slack.com/apps' , ress_name: "Slack Bot Directory
 Resource.create(link: 'https://storebot.me' , ress_name: "Telegram Bot Store", category_id: 5)
 Resource.create(link: 'https://www.producthunt.com/topics/bots' , ress_name: "Product Hunt Bots List", category_id: 5)
 Resource.create(link: 'http://ai.wikia.com/wiki/List_Of_Chat_Bots' , ress_name: "Wikia List of Chatbots", category_id: 5)
+Resource.create(link: 'http://www.dashbot.io/bots' , ress_name: "Dashbot List", category_id: 5)
 
 # 6. Platforms
 Resource.create(link: 'https://messengerplatform.fb.com/' , ress_name: "FB Messenger", category_id: 6)
@@ -92,3 +94,7 @@ Resource.create(link: 'https://cloud.google.com/' , ress_name: "Google Cloud Pla
 # 10. Hiring Bot Dev
 Resource.create(link: 'http://www.botgig.com/' , ress_name: "Botgig", category_id: 10)
 Resource.create(link: 'http://e-botfinder.com/' , ress_name: "E-Botfinder", category_id: 10)
+
+# 11. Tools
+Resource.create(link: 'http://dashbot.io' , ress_name: "Dashbot", category_id: 11)
+Resource.create(link: 'https://bots.mockuuups.com/' , ress_name: "Bot UI Kit", category_id: 11)

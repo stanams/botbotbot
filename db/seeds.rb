@@ -77,6 +77,7 @@ Resource.create(link: 'https://admin.wechat.com/' , ress_name: "WeChat", categor
 Resource.create(link: 'https://github.com/superscriptjs/qtypes' , ress_name: "qTypes", category_id: 7)
 Resource.create(link: 'https://github.com/superscriptjs/normalizer' , ress_name: "Normalizer", category_id: 7)
 Resource.create(link: 'https://github.com/howdyai/botkit' , ress_name: "Botkit", category_id: 7)
+Resource.create(link: 'https://github.com/claudiajs/claudia-bot-builder' , ress_name: "Claudia.js", category_id: 7)
 
 # 8. News
 Resource.create(link: 'https://chatbotsmagazine.com/' , ress_name: "ChatbotMagazine", category_id: 8)

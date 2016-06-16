@@ -99,3 +99,5 @@ Resource.create(link: 'http://e-botfinder.com/' , ress_name: "E-Botfinder", cate
 # 11. Tools
 Resource.create(link: 'http://dashbot.io' , ress_name: "Dashbot", category_id: 11)
 Resource.create(link: 'https://bots.mockuuups.com/' , ress_name: "Bot UI Kit", category_id: 11)
+Resource.create(link: 'https://protocall.herokuapp.com/' , ress_name: "Protocall Alternative Words Directory", category_id: 11)
+Resource.create(link: 'https://dashboard.buzzlogger.com/' , ress_name: "Buzzlogger Analytics", category_id: 11)

@@ -30,8 +30,8 @@ Resource.create(link: 'http://msg.ai/' , ress_name: "msg.ai", category_id: 1)
 Resource.create(link: 'https://chatfuel.com/' , ress_name: "Chatfuel", category_id: 1)
 Resource.create(link: 'https://www.gupshup.io/developer/home' , ress_name: "GupShup", category_id: 1)
 Resource.create(link: 'http://dev.backchannel.net/welcome/landing' , ress_name: "Backchannel", category_id: 1)
+Resource.create(link: 'https://www.vocal-apps.com/' , ress_name: "Vocal Apps", category_id: 1)
 
-# conversational UI?
 
 # 2. Tutos
 Resource.create(link: 'https://www.youtube.com/watch?v=xnMOm5a6Hiw' , ress_name: "Creating Chat bots on FB Messenger", category_id: 2)
@@ -63,6 +63,7 @@ Resource.create(link: 'https://storebot.me' , ress_name: "Telegram Bot Store", c
 Resource.create(link: 'https://www.producthunt.com/topics/bots' , ress_name: "Product Hunt Bots List", category_id: 5)
 Resource.create(link: 'http://ai.wikia.com/wiki/List_Of_Chat_Bots' , ress_name: "Wikia List of Chatbots", category_id: 5)
 Resource.create(link: 'http://www.dashbot.io/bots' , ress_name: "Dashbot List", category_id: 5)
+Resource.create(link: 'http://www.topbots.co/' , ress_name: "TopBots (FB)", category_id: 5)
 
 # 6. Platforms
 Resource.create(link: 'https://messengerplatform.fb.com/' , ress_name: "FB Messenger", category_id: 6)
